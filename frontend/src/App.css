@@ -1,0 +1,23 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set full viewport height for the app container */
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /* Example background color */
+  padding: 10px; /* Example padding */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.main {
+  flex: 1; /* Fill remaining vertical space */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  padding: 20px; /* Example padding */
+  padding-top: 50px;
+}
