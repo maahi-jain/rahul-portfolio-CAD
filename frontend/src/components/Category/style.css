@@ -1,0 +1,8 @@
+.chipStack {
+  justify-content: center;
+}
+
+.selectedChip {
+  border: black;
+  background-color: #3f51b5;
+}
