@@ -32,11 +32,13 @@ function App() {
       <AppBar id='header'>
         Rahul verma Designs
       </AppBar>
-      <MyContext.Provider value={{ content, mainBanner }}>
-        <Category />
-        <Home />
-      </MyContext.Provider>
-      <Footer />
+      <Box className='main'>
+        <MyContext.Provider value={{ content, mainBanner }}>
+          <Category />
+          <Home />
+        </MyContext.Provider>
+        <Footer />
+      </Box>
     </div>
   );
 }
