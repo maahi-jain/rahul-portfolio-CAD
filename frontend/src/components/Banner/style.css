@@ -16,3 +16,9 @@
   height: 20vh;
   object-fit: contain;
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "./style.css";
 import { useMyContext } from '../../App';
 
-const Banner = () => {
+const Banner = ({ category }) => {
 
     let settings = {
         dots: true,
@@ -16,7 +16,8 @@ const Banner = () => {
     }
 
     let { content, mainBanner } = useMyContext();
-    let bannerImages = content[0].files.images;
+    category = "rings"
+    let items = category && content[category];
 
     return (
         <>
@@ -29,14 +30,18 @@ const Banner = () => {
                     ))}
                 </Slider>
             </div>
-            <div className="itemBanner">
-                <Slider {...settings}>
-                    {bannerImages.map((data, index) => (
-                        <div key={index}>
-                            <img src={data} alt="apparel" />
-                        </div>
-                    ))}
-                </Slider>
+            <div className="grid">
+                {items && items.map((data, index) => (
+                    <div className="itemBanner" key={index}>
+                        <Slider {...settings}>
+                            {data.files.images.map((data, index) => (
+                                <div key={index}>
+                                    <img src={data} alt="apparel" />
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
+                ))}
             </div>
         </>
     )

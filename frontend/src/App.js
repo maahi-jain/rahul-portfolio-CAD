@@ -10,14 +10,46 @@ let imageFileURL = "https://drive.google.com/thumbnail?id="
 let videoFileURL = "https://drive.google.com/file/d/VIDEO_ID/preview?autoplay=1"
 
 let mainBanner = [imageFileURL + "1nv0fs8cK70qP-bVDOgpyYnVkXOlocZBc", imageFileURL + "1nv0fs8cK70qP-bVDOgpyYnVkXOlocZBc"]
-let content = [{
-  category: 'ring',
-  files: {
-    images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-    video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
-  },
-  description: "abc"
-}];
+
+let content = {
+  rings: [{
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }, {
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }, {
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }, {
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }, {
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }, {
+    files: {
+      images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
+      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+    },
+    description: "abc"
+  }]
+}
 
 // Create a Context
 const MyContext = createContext();

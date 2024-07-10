@@ -20,4 +20,5 @@
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
   overflow-x: auto;
   padding-top: 50px;
+  height: 100%;
 }
