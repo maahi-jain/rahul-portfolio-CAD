@@ -18,6 +18,6 @@
 .main {
   flex: 1; /* Fill remaining vertical space */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  padding: 20px; /* Example padding */
+  overflow-x: hidden;
   padding-top: 50px;
 }
