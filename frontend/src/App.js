@@ -19,37 +19,67 @@ let content = {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
       videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
-    description: "abc"
+    description: {
+      Gold: "22.5gm",
+      Silver: "10gm",
+      Weight: "40gm",
+      KT: "22kt"
+    }
   }]
 }
 

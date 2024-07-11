@@ -18,6 +18,19 @@ const Details = () => {
                     <iframe src={x} key={i} title={i} allow="autoPlay" />
                 ))}
             </Slider>
+            <div>
+                <h2 className="descHeader">Description</h2>
+                <table>
+                    <tbody>
+                        {Object.keys(item.description).map((key, i) => (
+                            <tr key={i}>
+                                <th>{key}:</th>
+                                <td>{item.description[key]}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

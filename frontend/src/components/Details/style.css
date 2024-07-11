@@ -8,4 +8,15 @@
 .detailsContainer {
   padding: 30px;
   vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.descHeader {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: xx-large;
+  text-transform: uppercase;
 }
