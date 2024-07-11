@@ -5,9 +5,9 @@ import './style.css';
 
 const Category = () => {
 
-    useEffect(() => {
+    // useEffect(() => {
 
-    }, []);
+    // }, []);
 
     const [categories, setCategories] = useState([
         { id: 1, name: 'rings', selected: true },
@@ -15,6 +15,8 @@ const Category = () => {
         { id: 3, name: 'chain', selected: false },
         { id: 4, name: 'earrings', selected: false }
     ]);
+
+    // const navigateToBanner
 
     const selectCategory = (id) => {
         let updatedCategory = categories.map((category) => {

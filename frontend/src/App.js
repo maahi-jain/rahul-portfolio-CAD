@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import './App.css';
-import Banner from './components/Banner';
+import Designs from './components/Designs/index.js';
 import Category from './components/Category';
 import Footer from './components/Footer';
 let imageFileURL = "https://drive.google.com/thumbnail?id="
@@ -69,7 +69,7 @@ function App() {
         <MyContext.Provider value={{ content, mainBanner }}>
           <Category />
           <Routes>
-            <Route exact path='/' element={<Banner />} />
+            <Route exact path='/' element={<Designs />} />
           </Routes>
         </MyContext.Provider>
         <Footer />

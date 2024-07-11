@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "./style.css";
 import { useMyContext } from '../../App';
 
-const Banner = ({ category }) => {
+const Designs = ({ category }) => {
 
     let settings = {
         dots: true,
@@ -47,4 +47,4 @@ const Banner = ({ category }) => {
     )
 }
 
-export default Banner;
+export default Designs;
