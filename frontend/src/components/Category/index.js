@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import './style.css';
 
 const Category = () => {
+
+    useEffect(() => {
+
+    }, []);
+
     const [categories, setCategories] = useState([
         { id: 1, name: 'rings', selected: true },
         { id: 2, name: 'pendants', selected: false },

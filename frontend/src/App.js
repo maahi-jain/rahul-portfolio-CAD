@@ -1,11 +1,12 @@
-import './App.css';
 import { AppBar, Box } from '@mui/material';
-import Footer from './components/Footer';
-import Category from './components/Category';
-import "slick-carousel/slick/slick.css";
+import { createContext, useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
-import Home from './components/Home';
-import { createContext, useContext, useState } from 'react';
+import "slick-carousel/slick/slick.css";
+import './App.css';
+import Banner from './components/Banner';
+import Category from './components/Category';
+import Footer from './components/Footer';
 let imageFileURL = "https://drive.google.com/thumbnail?id="
 let videoFileURL = "https://drive.google.com/file/d/VIDEO_ID/preview?autoplay=1"
 
@@ -67,7 +68,9 @@ function App() {
       <Box className='main'>
         <MyContext.Provider value={{ content, mainBanner }}>
           <Category />
-          <Home />
+          <Routes>
+            <Route exact path='/' element={<Banner />} />
+          </Routes>
         </MyContext.Provider>
         <Footer />
       </Box>
