@@ -69,7 +69,7 @@ function App() {
         <MyContext.Provider value={{ content, mainBanner }}>
           <Category />
           <Routes>
-            <Route exact path='/' element={<Designs />} />
+            <Route exact path='/designs' element={<Designs />} />
           </Routes>
         </MyContext.Provider>
         <Footer />

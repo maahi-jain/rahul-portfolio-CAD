@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 const Category = () => {
-
-    // useEffect(() => {
-
-    // }, []);
+    const navigate = useNavigate();
+    useEffect(() => {
+        navigateToDesigns('rings');
+    }, []);
 
     const [categories, setCategories] = useState([
         { id: 1, name: 'rings', selected: true },
@@ -16,18 +17,23 @@ const Category = () => {
         { id: 4, name: 'earrings', selected: false }
     ]);
 
-    // const navigateToBanner
+    const navigateToDesigns = (category) => {
+        navigate("/designs", { state: { category } })
+    }
 
     const selectCategory = (id) => {
+        let selectedCategory;
         let updatedCategory = categories.map((category) => {
             if (category.id === id) {
                 category.selected = true
+                selectedCategory = category.name;
             } else {
                 category.selected = false
             }
             return category;
         });
         setCategories(updatedCategory);
+        navigateToDesigns(selectedCategory);
     }
 
     return (

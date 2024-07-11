@@ -2,8 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "./style.css";
 import { useMyContext } from '../../App';
+import { useLocation } from "react-router-dom";
 
-const Designs = ({ category }) => {
+const Designs = () => {
+
+    const location = useLocation();
+    const category = location.state?.category;
 
     let settings = {
         dots: true,
@@ -16,7 +20,6 @@ const Designs = ({ category }) => {
     }
 
     let { content, mainBanner } = useMyContext();
-    category = "rings"
     let items = category && content[category];
 
     return (
