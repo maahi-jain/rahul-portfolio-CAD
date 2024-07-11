@@ -1,0 +1,11 @@
+.detailsContent,
+.detailsContent img,
+.detailsContent iframe {
+  width: 60vh;
+  height: 70vh;
+}
+
+.detailsContainer {
+  padding: 30px;
+  vertical-align: middle;
+}

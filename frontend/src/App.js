@@ -7,8 +7,9 @@ import './App.css';
 import Designs from './components/Designs/index.js';
 import Category from './components/Category';
 import Footer from './components/Footer';
+import Details from './components/Details/index.js';
 let imageFileURL = "https://drive.google.com/thumbnail?id="
-let videoFileURL = "https://drive.google.com/file/d/VIDEO_ID/preview?autoplay=1"
+let videoFileURL = "https://drive.google.com/file/d/VIDEO_ID/preview"
 
 let mainBanner = [imageFileURL + "1nv0fs8cK70qP-bVDOgpyYnVkXOlocZBc", imageFileURL + "1nv0fs8cK70qP-bVDOgpyYnVkXOlocZBc"]
 
@@ -16,37 +17,37 @@ let content = {
   rings: [{
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }, {
     files: {
       images: [imageFileURL + "15UjpVzIAifGC8qUGQ6Yo8-Gh-gfhLgrU", imageFileURL + "16T7yI9sUzcjn_L3-NOOXk96i5p1et7OK"],
-      video: videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")
+      videos: [videoFileURL.replace("VIDEO_ID", "1LVNE1CEg9ziIgJWaSVSz7EcjaE0RwsBw")]
     },
     description: "abc"
   }]
@@ -70,6 +71,7 @@ function App() {
           <Category />
           <Routes>
             <Route exact path='/designs' element={<Designs />} />
+            <Route exact path='/details' element={<Details />} />
           </Routes>
         </MyContext.Provider>
         <Footer />

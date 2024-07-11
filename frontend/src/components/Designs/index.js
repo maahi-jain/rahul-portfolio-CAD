@@ -2,11 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "./style.css";
 import { useMyContext } from '../../App';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Designs = () => {
 
     const location = useLocation();
+    const navigate = useNavigate();
     const category = location.state?.category;
 
     let settings = {
@@ -22,6 +23,10 @@ const Designs = () => {
     let { content, mainBanner } = useMyContext();
     let items = category && content[category];
 
+    const navigateToDetails = (item) => {
+        navigate("/details", { state: { item } })
+    }
+
     return (
         <>
             <div className="mainBanner">
@@ -36,10 +41,10 @@ const Designs = () => {
             <div className="grid">
                 {items && items.map((data, index) => (
                     <div className="itemBanner" key={index}>
-                        <Slider {...settings}>
-                            {data.files.images.map((data, index) => (
-                                <div key={index}>
-                                    <img src={data} alt="apparel" />
+                        <Slider {...settings} >
+                            {data.files.images.map((item, index) => (
+                                <div className="itemImage" onClick={() => navigateToDetails(data)} key={index}>
+                                    <img src={item} alt="apparel" />
                                 </div>
                             ))}
                         </Slider>
